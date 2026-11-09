@@ -1,0 +1,17 @@
+import io.github.keiyoushi.gradle.api.ContentWarning
+
+plugins {
+    alias(kei.plugins.extension)
+}
+
+yuzono {
+    name = "AnimeHeaven"
+    versionCode = 1
+    contentWarning = ContentWarning.MIXED
+    libVersion = "16"
+
+    source {
+        lang = "en"
+        baseUrl = "https://animeheaven.me"
+    }
+}
